@@ -1,0 +1,78 @@
+<h2>DATA STRUCTURE</h2>
+
+<div class="mt-4">
+  <p class="mt-3">
+    Data structures are fundamental constructs around which you build your application. 
+    A data structure determines the way data is stored, and organized in your computer. 
+    Whenever data exists it must have some kind of data structure in order to be stored in a computer.
+  </p>
+
+  <br />
+
+  <h4>Contiguous or Linked Data Structures</h4>
+  <p class="mt-3">
+    Data structures can be classified as either contiguous or linked, 
+    depending whether they are based on arrays or pointers (references):
+  </p>
+  <ul class="list-display">
+    <li>
+      <strong>Contiguous-allocated structures :</strong> 
+      <br />
+      These are made of single slabs of memory, 
+      some of these data structures are Arrays, Matrices, Heaps, and Hash Tables.
+    </li>
+    <li>
+      <strong>Linked data structures :</strong> 
+      <br />
+      It is composed as distinct chunks of memory linked together by pointers (references). 
+      Some of this data structures are lists, trees, and graph adjacency lists.
+    </li>
+  </ul>
+
+  <br />
+
+  <div class="bg-faint-blue p-4" style="border-radius: 6px;">
+    <h4>Comparison</h4>
+    <p class="mt-3">
+      Some advantages of linked lists over static arrays are:
+    </p>
+    <ul class="list-display">
+      <li>
+        Overflow is more difficult to occur on a linked structures than it is in an array. 
+        It only happens when the memory is actually full.
+      </li>
+      <li>Insertions and deletions are simpler than for contiguous data structures such as arrays.</li>
+      <li>Linked list don't need to know size on initialization.</li>
+    </ul>
+
+    <br />
+    
+    <p>
+      Advantages of arrays:
+    </p>
+    <ul class="list-display">
+      <li>Linked structures require allocating extra space for storing pointers.</li>
+      <li>Arrays allow efficient access to any item.</li>
+    </ul>
+  </div>
+
+  <br />
+  <br />
+  
+  <h4>Data Structures</h4>
+  <p class="mt-3">
+    Types of Data Structures :
+  </p>
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4" *ngFor="let dataStructure of dataStructureList">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-black">{{ dataStructure.name }}</h6>
+          <a [routerLink]="['/ds', dataStructure.slug]" class="text-link">
+            <p style="font-size: 14px;" class="mb-0">Read More. . .</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

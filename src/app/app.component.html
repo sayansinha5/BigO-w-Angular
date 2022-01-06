@@ -1,0 +1,17 @@
+<div id="sidebar-wrapper" class="bg-faint-blue" [class.hide-sidebar]="hideSidebar">
+  <app-sidebar></app-sidebar>
+</div>
+<div id="view-content-wrapper" [class.full-content-view]="hideSidebar">
+  <button id="toggle-sidebar" class="d-md-none" (click)="toggleSidebar()">
+    <i class="fa fa-bars fa-fw"></i>
+  </button>
+  <div id="view-area" (click)="collapseSidebar()">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-10 col-md-8 offset-1 offset-md-2">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

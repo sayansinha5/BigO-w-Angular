@@ -1,0 +1,46 @@
+$primary-link-colour: #0091e6;
+$highlight-link-colour: #cce9fa;
+$white-color: #ffffff;
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    li {
+        width: 100%;
+    }
+
+    li > a {
+        display: block;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        font-size: 16px;
+        padding: 16px 0;
+        padding-left: 50px;
+        text-decoration: none;
+        color: $primary-link-colour;
+        background-color: transparent;
+    }
+
+    li > a:hover {
+        background-color: $highlight-link-colour;
+        text-decoration: none;
+    }
+
+    li > a.sb-active-link {
+        background-color: $primary-link-colour;
+        color: $white-color;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    ul {
+        li > a {
+            padding-left: 30px;
+            font-size: 14px;
+        }
+    }
+}

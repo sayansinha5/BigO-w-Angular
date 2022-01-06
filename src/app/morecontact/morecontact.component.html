@@ -1,0 +1,49 @@
+<h2>Helloooooo! </h2>
+
+<div class="mt-4">
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>
+        It's nice to meet you :D
+        <br />
+        My name is Sayan Sinha.
+      </p>
+    
+      <p class="mb-4" style="letter-spacing: 0.3px; font-size: 14px;">
+        <i class="fa fa-paperclip fa-fw"></i>&nbsp;
+        <a class="text-link" target="_blank" href="https://sayansinha5.github.io/My-Portfolio">Portfolio</a>
+        <br />
+        <i class="fab fa-github fa-fw"></i>&nbsp;
+        <a class="text-link" target="_blank" href="https://github.com/sayansinha5">/sayansinha5</a>
+        <br />
+        <i class="fab fa-linkedin fa-fw"></i>&nbsp;
+        <a class="text-link" target="_blank" href="https://www.linkedin.com/in/sayansinha5">/in/sayansinha5</a>
+        <br />
+        <br />
+        <i class="fa fa-paper-plane fa-fw"></i>&nbsp;
+        <a class="text-link" href="mailto:sayansinha5@gmail.com">sayansinha5@gmail.com</a>
+      </p>
+    </div>
+    <div class="col-md-8">
+      <div class="bg-faint-blue p-3" style="border-radius: 4px;">
+        <form #feedbackMessageForm="ngForm" (ngSubmit)="getValues(feedbackMessageForm.value)">
+          <div class="mb-3">
+            <input type="text" ngModel class="form-control form-control-sm" placeholder="Full Name" name="name">
+          </div>
+          <div class="mb-3">
+            <input type="email" ngModel class="form-control form-control-sm" placeholder="Email" name="email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-control-sm" ngModel rows="3" placeholder="Message" name="message"></textarea>
+          </div>
+          <div class="text-end">
+            <button class="btn btn-primary btn-sm">
+              <i class="fa fa-paper-plane"></i> Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+$sidebar-width: 270px;
+
+#sidebar-wrapper {
+    min-width: $sidebar-width;
+    width: $sidebar-width;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #99d9ff;
+    transition: 0.28s ease-in-out;
+}
+
+#view-content-wrapper {
+    max-width: calc(100% - $sidebar-width);
+    margin-left: $sidebar-width;
+    overflow-x: hidden;
+    transition: 0.28s ease-in-out;
+}
+
+#view-area {
+    margin: 10px 0 60px 0;
+}
+
+.navbar {
+    width: 100% !important;
+}
+
+.navbar {
+    .navbar-brand {
+        font-weight: 500 !important;
+    }
+}
+
+#toggle-sidebar {
+    position: fixed;
+    left: calc($sidebar-width + 20px) !important;
+    top: 0;
+    color: #0091e6;
+    background-color: #e6f6ff;
+    font-size: 20px;
+    border: 1px solid transparent;
+    padding: 4px 8px;
+}
+
+#toggle-sidebar:hover {
+    border: 1px solid #99d9ff;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    $sidebar-width: 200px;
+
+    #sidebar-wrapper {
+        min-width: $sidebar-width;
+        width: $sidebar-width;
+        left: 0;
+    }
+
+    #view-content-wrapper {
+        max-width: calc(100% - $sidebar-width);
+        margin-left: $sidebar-width;
+    }
+
+    .hide-sidebar {
+        left: -$sidebar-width !important;
+    }
+    
+    .full-content-view {
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+}

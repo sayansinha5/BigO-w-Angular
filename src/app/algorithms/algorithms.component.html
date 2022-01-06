@@ -1,0 +1,128 @@
+<h2>ALGORITHMS</h2>
+
+<div class="mt-4">
+  <p class="mt-3">
+    Algorithm is a technique (or procedure) followed by steps to solve a problem.
+  </p>
+  <p>
+    When you're instructing a Computer what to do, you are also telling how to do it, 
+    to solve, even a sophisticated problem in a more approachable way.
+  </p>
+
+  <br />
+
+  <h4>Searching and Sorting</h4>
+  <p class="mt-3">
+    Looking up a particular data from an array of records is called <strong>Searching</strong>.
+    <br /> 
+    The process of arranging the records is called <strong>Sorting</strong>.
+  </p>
+  <p>
+    Both of them are very important field of study in data structure and algorithms.
+  </p>
+
+  <br />
+
+  <h4>Why is Sorting so important?</h4>
+  <ul class="list-display">
+    <li>
+      The first step in organizing data is sorting. 
+      Lots of tasks become easier once a data set of items is sorted
+    </li>
+    <li>
+      Some algorithms like binary search are built around a sorted data structure.
+    </li>
+    <li>
+      In accordance to S. Skiena computers have historically spent more time sorting than doing anything else. 
+      Sorting remains the most ubiquitous combinatorial algorithm problem in practice.
+    </li>
+  </ul>
+
+  <br />
+
+  <div class="bg-faint-blue p-4" style="border-radius: 6px;">
+    <h4>Considerations :</h4>
+    <ul class="list-display">
+      <li>
+        How to sort: descending order or ascending order?
+      </li>
+      <li>
+        Sorting based on what? An object name (alphabetically), by some number defined by its fields/instance variables. 
+        Or maybe compare dates, birthdays, etc.
+      </li>
+      <li>
+        What happens with equals keys, for example various people with the same name: 
+        John, then sort them by Last Name.
+      </li>
+      <li>
+        Does your sorting algorithm sorts in place or needs extra memory to hold another copy of the array to be sorted. 
+        This is even more important in embedded systems.
+      </li>
+    </ul>
+  </div>
+
+  <br />
+
+  <p>
+    Sorting becomes more ubiquitous when we think on all the things we do daily 
+    that are previously sorted for us to understand and have better access to them:
+  </p>
+  <ul class="list-display">
+    <li>
+      Imagine trying to find a phone number in an unsorted phone book, 
+      or searching for a word in an unsorted dictionary.
+    </li>
+    <li>Your MP3 player can sort your lists by artists name, genre, song name, ratings.</li>
+    <li>Search engines display results in descending order of importance.</li>
+    <li>Spreadsheets can be sorted in various ways to work better with their contents.</li>
+  </ul>
+
+  <br />
+
+  <h4>Searching</h4>
+  <p class="mt-3">
+    Searching is very important for many computing applications: 
+    searching through a search engine, finding a bank account balance for some client, 
+    searching in a large data set for a particular value, searching in your directories for some needed file.
+  </p>
+  <ul class="list-display">
+    <li>searching through a search engine,</li>
+    <li>finding a bank account balance for some client,</li>
+    <li>searching in a large data set for a particular value,</li>
+    <li>searching in your directories for some needed file</li>
+  </ul>
+
+  <br />
+  
+  <p>
+    There are two types of searching algorithms:
+  </p>
+  <ul class="list-display">
+    <li>Those that need a previously ordered data structure in order to work properly,</li>
+    <li>and those that don't need an ordered list.</li>
+  </ul>
+  <p>
+    Many applications rely on effective search. 
+    If your application is complete but takes long too perform a search and retrieve data it will be discarded as useless.
+  </p>
+
+  <br />
+  <br />
+
+  <h4>Sorting Algorithms</h4>
+  <p class="mt-3">
+    There are many types of Algorithms to sort but out of all, the most common Sorting Algorithms we need to know :
+  </p>
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-md-4" *ngFor="let sortAlgo of sortingAlgoList">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-black">{{ sortAlgo.name }}</h6>
+          <a [routerLink]="['/algo', sortAlgo.slug]" class="text-link">
+            <p style="font-size: 14px;" class="mb-0">Read More. . .</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
