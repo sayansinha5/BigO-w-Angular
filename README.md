@@ -11,5 +11,14 @@ Angular Project based on the topic <strong>Big-O Notation</strong> which include
 <img src="readmedocs/video_GIF.gif" />
 
 ## Project Screenshots (Desktop View)
+<h4>
+  <img src="readmedocs/01.png" align="left" style="width: 46%;" />
+  <img src="readmedocs/02.png" align="right" style="width: 46%;" />
+</h4>
 
-## Project Screenshots (Mobile View)
+<h4>&nbsp;&nbsp;</h4>
+
+<h4>
+  <img src="readmedocs/03.png" align="left" style="width: 46%;" />
+  <img src="readmedocs/04.png" align="right" style="width: 46%;" />
+</h4>
